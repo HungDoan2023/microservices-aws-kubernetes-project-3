@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: m-coworkingspace-service
+  name: m-coworkingspace-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: m-coworkingspace-service
+  template:
+    metadata:
+      labels:
+        service: m-coworkingspace-service
+    spec:
+      containers:
+      - image: 035092896958.dkr.ecr.us-east-1.amazonaws.com/coworkingspace-repository:latest
+        name: m-coworkingspace-service
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5153
+        livenessProbe:
+          httpGet:
+            path: /health_check
+            port: 5153
+          initialDelaySeconds: 5
+          timeoutSeconds: 2
+        readinessProbe:
+          httpGet:
+            path: /readiness_check
+            port: 5153
+          initialDelaySeconds: 5
+          timeoutSeconds: 5
+        resources:
+          requests:
+            memory: "1000Mi"
+            cpu: "250m"
+          limits:
+            memory: "2000Mi"
+            cpu: "500m"
+        envFrom:
+        - secretRef:
+            name: env-pwd-secret
+        - configMapRef:
+            name: env-db-config
+      restartPolicy: Always
