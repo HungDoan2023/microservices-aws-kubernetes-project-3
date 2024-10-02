@@ -60,6 +60,11 @@ For this project, you are a DevOps engineer who will be collaborating with a tea
 3. User Visits
 ![](./images/cws-test-user-visits-ok.png)
 
+http://af83706a9bc3f47eebbfdbf0bada781f-1349447050.us-east-1.elb.amazonaws.com:5153/readiness_check
+
+http://af83706a9bc3f47eebbfdbf0bada781f-1349447050.us-east-1.elb.amazonaws.com:5153/api/reports/daily_usage
+
+http://af83706a9bc3f47eebbfdbf0bada781f-1349447050.us-east-1.elb.amazonaws.com:5153/api/reports/user_visits
 
 ### Thanks
 Thank coach, mentor and the good course I'm able to finish the course. It's really a good valuation for me
