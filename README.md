@@ -40,11 +40,21 @@ For this project, you are a DevOps engineer who will be collaborating with a tea
 
 ![](./images/cws-describe-deployment-service-1.png)
 
+![](./images/cws-describe-deployment-coworkingspace-service-2.png)
+
 
 ### Logging and Documentation
 1. Display log content with CloudWatch
 
 ![](./images/cws-log-content-to-cloudwatch-successful.png)
+
+![](./images/cws-log-content-to-cloudwatch-successful-1.png)
+
+![](./images/cws-log-app-content-to-cloudwatch-successful-1.png)
+
+![](./images/cws-log-app-content-to-cloudwatch-successful-2.png)
+
+![](./images/cws-log-app-content-to-cloudwatch-successful-3.png)
 
 2. Display log insights on CloudWatch
 ![](./images/cws-log-insights-cloudwatch-successful.png)
