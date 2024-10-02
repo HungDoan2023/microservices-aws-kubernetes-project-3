@@ -33,6 +33,14 @@ For this project, you are a DevOps engineer who will be collaborating with a tea
 ![](./images/cws-create-coworkingspace-service.png)
 ![](./images/cws-create-coworkingspace-service-1.png)
 
+4. Describe services
+![](./images/cws-describe-services.png)
+
+![](./images/cws-describe-deployment-service.png)
+
+![](./images/cws-describe-deployment-service-1.png)
+
+
 ### Logging and Documentation
 1. Display log content with CloudWatch
 
